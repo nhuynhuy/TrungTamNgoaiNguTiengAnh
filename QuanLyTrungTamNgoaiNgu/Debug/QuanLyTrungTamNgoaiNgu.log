@@ -1,0 +1,8 @@
+﻿  main.cpp
+D:\CTDL\De Tai CTDL\QuanLyTrungTamNgoaiNgu\QuanLyTrungTamNgoaiNgu\XuLy.h(109,21): warning C4018: '<': signed/unsigned mismatch
+D:\CTDL\De Tai CTDL\QuanLyTrungTamNgoaiNgu\QuanLyTrungTamNgoaiNgu\XuLy.h(657,30): warning C4390: ';': empty controlled statement found; is this the intent?
+D:\CTDL\De Tai CTDL\QuanLyTrungTamNgoaiNgu\QuanLyTrungTamNgoaiNgu\XuLy.h(815,7): warning C4101: 'diem': unreferenced local variable
+D:\CTDL\De Tai CTDL\QuanLyTrungTamNgoaiNgu\QuanLyTrungTamNgoaiNgu\main.cpp(6,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\CTDL\De Tai CTDL\QuanLyTrungTamNgoaiNgu\QuanLyTrungTamNgoaiNgu\XuLy.h(514): warning C4715: 'kt_ma_hv_trung': not all control paths return a value
+D:\CTDL\De Tai CTDL\QuanLyTrungTamNgoaiNgu\QuanLyTrungTamNgoaiNgu\XuLy.h(666): warning C4715: 'kt_ma_hv': not all control paths return a value
+  QuanLyTrungTamNgoaiNgu.vcxproj -> D:\CTDL\De Tai CTDL\QuanLyTrungTamNgoaiNgu\Debug\QuanLyTrungTamNgoaiNgu.exe

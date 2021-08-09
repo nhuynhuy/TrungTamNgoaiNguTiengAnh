@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 #pragma once
 #include "CTDL.h"
 //void chuan_hoa_chu(string a)
@@ -91,7 +91,7 @@ void them_vao_cuoi(DSLH& ds_lh, LH* p)
 {
 	if (ds_lh.phead == NULL)
 	{
-		ds_lh.phead = p;//n?u ds r?ng t?c là phead == NULL thì node m?i thêm vào là phead luôn
+		ds_lh.phead = p;//náº¿u ds rá»—ng tá»©c lÃ  phead == NULL thÃ¬ node má»›i thÃªm vÃ o lÃ  phead luÃ´n
 	}
 	else
 	{
@@ -99,8 +99,8 @@ void them_vao_cuoi(DSLH& ds_lh, LH* p)
 		{
 			if (k->pnext == NULL)
 			{
-				k->pnext = p;//còn n?u có phead rùi mà sau ?ó ch?a thì thêm sau và break luôn, uhm thi no them dc cai dau xong no loi
-				break;// no them cai dau la xong vong này, vòng sau có phead rùi thì nó thêm vào sau mà, uhm ham nay dung roi :v 
+				k->pnext = p;
+				break;
 			}
 		}
 	}

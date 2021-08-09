@@ -7,6 +7,7 @@
 #include <conio.h>
 #include <fstream>
 #include <vector>
+#include<time.h>
 using namespace std;
 
 //============quan ly diem=========
@@ -19,7 +20,7 @@ struct Diem
 	Diem* pnext;
 };
 typedef struct Diem DIEM;
-struct DSDiem
+struct DSDiem // cai cho nay no la la vay =)) :V
 {
 	DIEM* phead = NULL;
 	DIEM* ptail = NULL;
@@ -58,7 +59,7 @@ struct LopHoc
 	string phonghoc;
 	int trangthai; //0: lop chuan bi mo, 1: lop dang hoc, 2: lop da hoan thanh)
 	//*qllh
-	tree* DSHocVien;
+	tree DSHocVien;
 	//pointer
 	LopHoc* pnext;
 };

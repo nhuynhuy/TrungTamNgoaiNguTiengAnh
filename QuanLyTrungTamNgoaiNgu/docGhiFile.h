@@ -70,14 +70,14 @@ void doc_file_lop_hoc(DSLH& ds_lh, DSCL& ds_cl)
 		
 		int viTri = kt_ma_cl(macaplop, ds_cl);
 		if (viTri != -1) {
-			them_vao_cuoi(ds_cl.ds[viTri]->DSlop_hoc, p2);
+			//them_vao_cuoi(ds_cl.ds[viTri]->DSlop_hoc, p2);
 		}
 	}
 	filein.close();
 }
 void ghi_file_lop_hoc(ofstream& fileout, DSCL ds_cl)
 {
-	fileout.open("DSLH.txt", ios::out | ios::trunc); //nhu nay hauhm// giu nguyen vay la dc. a nham, dc chua ? nhu nay chu ha, bo thang for duoi
+	fileout.open("DSLH.txt", ios::out | ios::trunc); 
 	// 
 	for (int i = 0; i < ds_cl.sl; i++)
 	{
@@ -111,11 +111,13 @@ void doc_file_hv(DSHV& ds_hv)
 	while (filein.eof() != true)
 	{
 		HocVien* x = khoi_tao_node_hoc_vien();
+
 		filein >> x->mahocvien;
 		filein.ignore();
 		getline(filein, x->ho, ',');
 		getline(filein, x->ten, ',');
-		getline(filein, x->phai, '\n');
+		getline(filein, x->phai, ',');
+		filein.ignore();
 		them_1_hv(ds_hv.TREE, x);
 		ds_hv.sl++;
 	}
@@ -127,8 +129,11 @@ void ghi_file_hV(ofstream& fileout, tree t)
 	if (t != NULL)
 	{
 		ghi_file_hV(fileout, t->pleft);
-		fileout << t->mahocvien << "," << t->ho << "," << t->ten << "," << t->phai;
-		fileout << endl;
+		fileout << t->mahocvien << "," << t->ho << "," << t->ten << "," << t->phai << ",";
+		
+			fileout << endl;
+		
+		
 		ghi_file_hV(fileout, t->pright);
 	}
 }
@@ -139,6 +144,7 @@ void ghi_file_hoc_vien(DSHV& ds_hv)
 	fileout.open("DSHV.txt", ios::out | ios::trunc);
 	ghi_file_hV(fileout, ds_hv.TREE);
 	fileout.close();
+
 }
 
 //void ghi_file_hV(ofstream& fileout, tree t)
